@@ -4,6 +4,8 @@ For both workflows, make sure to change `#SBATCH --mail-user=` and `$OUTPUT_DIR`
 
 ## Running MetaphlAn
 
+Use the `metaphlan_submitter.sh` file.
+
 `${INPUT}` is one or two fastq files. If using two files, they must have be in the format <sample_name>R1.fastq,<sample_name>R2.fastq
 
 MetaphlAn will generate `${OUTPUT_DIR}/profiled_metagenome.txt` which will include the different clades found in the sample and their relative abundance.
@@ -11,8 +13,9 @@ MetaphlAn will generate `${OUTPUT_DIR}/profiled_metagenome.txt` which will inclu
 
 ## Running HUMAnN
 
-`${INPUT}` is one fastq file.
+Use the `humann_submitter.sh` file.
 
+`${INPUT}` is one fastq file.
 
 HUMAnN will generate three files:
 * `$OUTPUT_DIR/$SAMPLENAME_genefamilies.tsv`
